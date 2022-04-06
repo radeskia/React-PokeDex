@@ -7,9 +7,8 @@ import "./../assets/pagination.css";
 
 const Dashboard = () => {
     const [data, setData] = useState();
-
     const [pageNumber, setPageNumber] = useState(0);
-    const pokemonPerPage = 24;
+    const pokemonPerPage = 21;
     const pastPokemon = pageNumber * pokemonPerPage;
 
     const changePage = ({ selected }) => {
@@ -33,7 +32,7 @@ const Dashboard = () => {
                     xs={2}
                     md={3}
                     lg={4}
-                    xl={12}
+                    xl={6}
                     className="justify-content-center py-5"
                 >
                     {data
